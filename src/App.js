@@ -23,7 +23,9 @@ const App = () => {
             });
             setIndex(commandData.faqId - 1);
           } else if (commandData.command === 'changeColorMode') {
-            setColorFlag(colorFlag => !colorFlag);
+            setColorFlag(colorFlag => {
+              return !colorFlag;
+            });
           }
         },
       });

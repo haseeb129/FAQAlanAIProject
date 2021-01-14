@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Flex, Heading, Spacer } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
-const Navbar = colorFlag => {
+const Navbar = ({ colorFlag }) => {
   return (
     <Flex align="center" boxShadow="base" p="2" mb="2">
       <Box p="2">
